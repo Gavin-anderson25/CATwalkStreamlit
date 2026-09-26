@@ -1,6 +1,4 @@
 streamlit
-io
 Bio
 numpy
-random
-re
+
