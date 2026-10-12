@@ -75,6 +75,15 @@ st.divider()
 
 seed_generator, seed_extender, product_validator = st.columns(3)
 
+with st.sidebar:
+    st.subheader("About")
+    st.text("CATwalk is a naïve gene assembler created for my Master's thesis at San Jose State University.")
+    st.text("This app's job is to expand out short-read fragments of interest using a provided short-read library.")
+    st.text("It is most useful for applications where assembly of the entire genome is not necessary. CATwalk uses fewer resources and is much faster than other assembly tools.")
+    st.text("The generator section is for testing purposes; it generates random fragments from a given library.")
+    st.text("The validator section is for checking the extended product against a provided reference genome.")
+    st.text("While this tool is fast and efficient, it is prone to errors in certain circumstances and contains no sequencing-level error correction.")
+    
 with seed_generator:
     with st.container(key="generator"):
         st.header("Seed Generator")
