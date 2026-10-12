@@ -83,6 +83,7 @@ with st.sidebar:
     st.text("The generator section is for testing purposes; it generates random fragments from a given library.")
     st.text("The validator section is for checking the extended product against a provided reference genome.")
     st.text("While this tool is fast and efficient, it is prone to errors in certain circumstances and contains no sequencing-level error correction.")
+    st.markdown(":red[Important! Currently, this webhosted app has problems uploading and parsing large files. This is an issue with the host and not with the app itself.]")
     
 with seed_generator:
     with st.container(key="generator"):
